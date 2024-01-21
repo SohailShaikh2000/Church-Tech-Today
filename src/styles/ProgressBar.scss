@@ -1,0 +1,7 @@
+.progress-bar-container {
+    & { height: 5px;width: 150%; background-color: #d6d6d6; border-radius: 10px;display: flex; gap: 84px; }
+    .progress-bar {
+        & { height: 100%; width: 100%; background-color: #2274f0; border-radius: 10px; transition: 250ms ease ; display: flex; gap: 24px; }
+        
+    }
+}

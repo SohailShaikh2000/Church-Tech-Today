@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Introduction from './components/Introduction';
+import Test from './pages/Test';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { SliderValueProvider } from './components/SliderValue';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+    <SliderValueProvider>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header />
+        <Routes>
+          <Route exact path='/' element={<Introduction />} />
+          <Route exact path='/test' element={<Test />} />
+        </Routes>
       </header>
-    </div>
+    </SliderValueProvider>
+    </BrowserRouter>
   );
 }
 

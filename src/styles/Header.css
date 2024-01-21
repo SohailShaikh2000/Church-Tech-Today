@@ -1,0 +1,22 @@
+.header-container {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+}
+.header-container .header-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px;
+}
+.header-container .header-content h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-container .header-content img {
+  height: 100%;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,76 @@
+.introduction-container { 
+    & { height: 90vh; width: 100vw; background-color: #3a3a3a; display: flex; align-items:center; justify-content: center; }
+    .main {
+        & { height: 578px;width: 1100px;background-color: #fff; border-radius: 12px; display: flex; }
+        .side-a-container {
+          & { height: 100%; width: 50%; border-radius: 12px 0 0 12px; font-family: Lato,sans-serif; display: flex; flex-direction: column; position: relative;}
+          video {
+            & {height: 100%; max-width: 100%; border-radius: 12px 0 0 12px; object-fit: cover;} 
+          }
+          .play-button{ 
+            &{ position: absolute  ; top: 85%; left: 4%; border: none; outline: none; width: 90%; height: 32px; border-radius: 12px; color: #fff; font-weight: 600; display: flex; align-items: center; justify-content: start; border-radius: 20px; }
+            .controls { width: 100%;display: flex; align-items: center; justify-content: space-between; }
+          }
+          // img{ height: 70%; position: absolute; left: 20px;}
+        }
+          .side-b-container {
+            & { height: 100%;width: 50%; box-sizing: border-box; display: flex; align-items: center;justify-content: space-between; gap: 12px; }
+            .side-b{
+            & {margin: 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+            .title {
+              & { height: 20%; width: 100%; font-size: 21px; font-family: Lato,sans-serif;}
+              span {color: rgb(110, 12, 249);}
+            } 
+              
+            .points {
+              & {height: 40%; font-weight: 300; margin: 12px auto 12px 0; display: flex; flex-direction: column; text-align: flex-start; justify-content: space-between; gap: 8px; font-size: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #808080; }
+            }
+            .get-started {
+              & {height: 15%; display: flex; align-items: center; justify-content: flex-start; padding: 8px 0; gap: 36px; }
+              button { height: 50px; width: 156px; border: none; outline: none; background-color: rgb(110, 12, 249); color: #fff; font-size: 18px; border-radius: 4px; font-weight: 600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; cursor: pointer;}
+              button:hover {background-color: #0aaea3; transition: .3s}
+              .timing {
+                & {display: flex; gap: 6px;} 
+              } 
+            }
+            .footer {
+              & {height: 10%; font-size: 14px; font-family: Arial, Helvetica, sans-serif; padding: 8px 0; }
+            }
+            .instructions {
+              & {height: 15%; font-size: 11px; display: flex; align-items: center; justify-content: center; font-weight: 200; }
+            }
+          }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  .introduction-container { 
+    & { height: 100%; width: 100%; background-color: #3a3a3a; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
+    .main {
+      & { display: flex; flex-direction: column; background-color: #3a3a3a; height: 100%;width: 90vw; margin: 10px; align-items: center;}
+      .side-a-container {
+        & { height: 100%; width: 100%; display: flex; align-items: center;justify-content: center; padding: 12px; }
+        video {  object-fit: cover; min-height: 520px; width: 100%; display: flex; align-items: center; justify-content: center; border-radius: 12px; }
+      }
+      .side-b-container {
+        & {height: 50%;width: 97%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; background-color: #fff; border-radius: 12px;}
+        .side-b {
+          & { gap: 8px; min-width: 100%; display: flex; align-items: center; justify-content: center; }
+          .title {
+            & { text-align: start; }
+          }
+          .points { max-width: 100%; display: flex; align-items: flex-start; }
+            .get-started { min-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 6px;}
+          .footer { min-width: 100%; font-style: 22px; }
+          .instructions{ font-size: 14px;}
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  
+
+}
