@@ -7,16 +7,16 @@ import { SliderValueProvider } from './components/SliderValue';
 
 function App() {
   return (
-    <BrowserRouter>
-    <SliderValueProvider>
-      <header className="App-header">
-        <Header />
-        <Routes>
-          <Route exact path='/' element={<Introduction />} />
-          <Route exact path='/test' element={<Test />} />
-        </Routes>
-      </header>
-    </SliderValueProvider>
+    <BrowserRouter basename={window.location.pathname || ""}>
+      <SliderValueProvider>
+        <header className="App-header">
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Introduction />} />
+            <Route exact path="/test" element={<Test />} />
+          </Routes>
+        </header>
+      </SliderValueProvider>
     </BrowserRouter>
   );
 }
