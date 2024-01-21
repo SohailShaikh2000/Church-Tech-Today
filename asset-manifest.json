@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Church-Tech-Today/static/css/main.c9b62277.css",
-    "main.js": "/Church-Tech-Today/static/js/main.9f739d2c.js",
+    "main.js": "/Church-Tech-Today/static/js/main.8e9c1a77.js",
     "static/media/video.mp4": "/Church-Tech-Today/static/media/video.7542c1263f89266a367e.mp4",
     "index.html": "/Church-Tech-Today/index.html",
     "static/media/pace_FILL0_wght400_GRAD0_opsz24.svg": "/Church-Tech-Today/static/media/pace_FILL0_wght400_GRAD0_opsz24.c465a6d1db5c89aa1121635ae3928e98.svg",
     "main.c9b62277.css.map": "/Church-Tech-Today/static/css/main.c9b62277.css.map",
-    "main.9f739d2c.js.map": "/Church-Tech-Today/static/js/main.9f739d2c.js.map"
+    "main.8e9c1a77.js.map": "/Church-Tech-Today/static/js/main.8e9c1a77.js.map"
   },
   "entrypoints": [
     "static/css/main.c9b62277.css",
-    "static/js/main.9f739d2c.js"
+    "static/js/main.8e9c1a77.js"
   ]
 }
