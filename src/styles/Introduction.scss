@@ -56,7 +56,7 @@
       .side-b-container {
         & {height: 50%;width: 97%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; background-color: #fff; border-radius: 12px;}
         .side-b {
-          & { gap: 8px; min-width: 100%; display: flex; align-items: center; justify-content: center; }
+          & { gap: 8px; display: flex; align-items: center; justify-content: center; }
           .title {
             & { text-align: start; }
           }
@@ -68,6 +68,8 @@
       }
     }
   }
+  .introduction-container .main .side-b-container {width: 100%;}
+  .introduction-container .main .side-b-container .side-b .title h2{width: 100%;}
 }
 
 @media only screen and (max-width: 550px) {
